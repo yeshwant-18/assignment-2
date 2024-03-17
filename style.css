@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #FF9933 33%, #FFFFFF 33%, #FFFFFF 66%, #138808 66%);
+    position: relative;
+    height: 100vh; 
+    width: 100vw;
+
+.nav {
+    background-color: #007bff; 
+    padding: 10px 0; 
+    text-align: center; 
+}
+
+.nav button.count {
+    background-color: #4CAF50; 
+}
+
+.nav button.check {
+    background-color: #f44336; 
+}
+
+.nav button.calculate {
+    background-color: #FFC107; 
+}
+
+.nav button {
+    margin: 10px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    color: #ffffff; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.nav button:hover {
+    opacity: 0.8; 
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto; 
+    width: 80%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.content input, .content button {
+    margin: 10px;
+    padding: 10px;
+    width: 80%; 
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+}
+
+.content button {
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.content button:hover {
+    background-color: #218838; 
+}

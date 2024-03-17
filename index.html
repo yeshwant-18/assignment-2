@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Function Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <button onclick="showSection('vowelsConsonants')" class="count">Vowels and Consonants</button>
+        <button onclick="showSection('palindrome')" class="check">Palindrome Checker</button>
+        <button onclick="showSection('tipCalculator')" class="calculate">Tip Calculator</button>
+    </div>
+
+    <div id="vowelsConsonants" class="content">
+        <h2>Count Vowels and Consonants</h2>
+        <input type="text" id="stringInput" placeholder="Enter a string">
+        <button onclick="countVowelsAndConsonants()">Count</button>
+        <p id="stringResult"></p>
+    </div>
+
+    <div id="palindrome" class="content" style="display:none;">
+        <h2>Palindrome Checker</h2>
+        <input type="text" id="palindromeInput" placeholder="Enter a series of numbers">
+        <button onclick="checkPalindrome()">Check</button>
+        <p id="palindromeResult"></p>
+    </div>
+
+    <div id="tipCalculator" class="content" style="display:none;">
+        <h2>Tip Calculator</h2>
+        <input type="number" id="subtotalInput" placeholder="Enter subtotal">
+        <input type="number" id="tipPercentageInput" placeholder="Enter tip percentage">
+        <button onclick="calculateTip()">Calculate</button>
+        <p id="tipResult"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
